@@ -22,6 +22,7 @@ export const coupleData = {
       caption: "Kencan pertama yang nggak bakal pernah aku lupain. Gugup tapi rasanya senang banget bisa di samping kamu.",
       date: "20 May 2023",
       sticker: "First Date ☕",
+      photographer: "Photographed by Riel",
       rotate: "2deg"
     },
     {
@@ -31,6 +32,7 @@ export const coupleData = {
       caption: "Tempat paling nyaman di dunia adalah saat ada di deket kamu.",
       date: "10 Aug 2023",
       sticker: "My Safe Place 🎀",
+      photographer: "Photographed by Riel",
       rotate: "-2deg"
     },
     {
@@ -88,6 +90,7 @@ export const coupleData = {
       description: "Hari pertama kita saling sapa. Siapa yang sangka dari sapaan kecil itu bakal tumbuh perasaan yang begitu indah dan hangat sampai hari ini.",
       image: "/photos/2.jpg",
       imageIndex: 1,
+      photographer: "Photographed by Riel",
       bgGradient: "from-pink-100 to-pink-200 dark:from-purple-900/40 dark:to-pink-900/40",
       sticker: "🧸"
     },

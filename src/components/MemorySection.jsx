@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { coupleData } from '../data/romanticData';
-import { Sparkles, Calendar, BookOpen } from 'lucide-react';
+import { Sparkles, Calendar, BookOpen, Camera } from 'lucide-react';
 import { useSound } from '../context/SoundContext';
 
 export const MemorySection = ({ onOpenPhoto }) => {
@@ -63,11 +63,17 @@ export const MemorySection = ({ onOpenPhoto }) => {
                   {/* Decorative Scrapbook Tape */}
                   <div className="tape-top-left" />
 
-                  {/* Header Tag */}
+                  {/* Header Tag & Photographer Credit */}
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="px-3.5 py-1 bg-white/90 dark:bg-pink-950/90 text-cute-rose font-bold text-xs rounded-full shadow-sm">
                       {memory.tag}
                     </span>
+                    {memory.photographer && (
+                      <span className="px-2.5 py-1 bg-white/70 dark:bg-pink-950/70 text-cute-rose dark:text-pink-200 font-semibold text-[11px] rounded-full shadow-xs flex items-center gap-1">
+                        <Camera className="w-3 h-3 text-cute-rose" />
+                        <span>{memory.photographer}</span>
+                      </span>
+                    )}
                   </div>
 
                   {/* Title & Description */}
@@ -92,13 +98,19 @@ export const MemorySection = ({ onOpenPhoto }) => {
                       alt={memory.title}
                       className="w-full h-full object-cover object-center transition-transform duration-500 group-hover/photo:scale-108"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover/photo:opacity-100 transition-opacity flex items-end justify-between p-3 text-white text-xs font-semibold">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover/photo:opacity-100 transition-opacity flex items-end justify-between p-3 text-white text-xs font-semibold">
                       <span className="flex items-center gap-1">
                         <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-spin-slow" /> Klik untuk perbesar
                       </span>
-                      <span className="bg-white/30 backdrop-blur-xs px-2.5 py-0.5 rounded-full text-[11px] font-bold">
-                        4:3 📸
-                      </span>
+                      {memory.photographer ? (
+                        <span className="bg-white/30 backdrop-blur-xs px-2.5 py-0.5 rounded-full text-[11px] font-bold">
+                          📷 {memory.photographer}
+                        </span>
+                      ) : (
+                        <span className="bg-white/30 backdrop-blur-xs px-2.5 py-0.5 rounded-full text-[11px] font-bold">
+                          4:3 📸
+                        </span>
+                      )}
                     </div>
                   </div>
 

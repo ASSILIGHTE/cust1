@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart, Sparkles, Camera } from 'lucide-react';
 import { useSound } from '../context/SoundContext';
 import confetti from 'canvas-confetti';
 
@@ -41,7 +41,7 @@ export const FooterSection = () => {
           "A cute little digital love gift made especially for my favorite person."
         </p>
 
-        <div className="flex items-center justify-center gap-1 text-xs text-gray-400 dark:text-pink-300/50 mt-2">
+        <div className="flex items-center justify-center gap-1 text-xs text-gray-400 dark:text-pink-300/50 mt-2 font-medium">
           <span>Crafted with</span>
           <Heart className="w-3.5 h-3.5 text-cute-rose fill-current" />
           <span>just for you</span>

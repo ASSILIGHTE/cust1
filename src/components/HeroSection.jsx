@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { coupleData } from '../data/romanticData';
 import { CuteMascots } from './CuteMascots';
-import { Heart, Sparkles, Calendar } from 'lucide-react';
+import { Heart, Sparkles, Calendar, Camera } from 'lucide-react';
 import { useSound } from '../context/SoundContext';
 
 export const HeroSection = ({ onTriggerPetals }) => {

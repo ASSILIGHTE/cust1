@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { coupleData } from '../data/romanticData';
 import { useSound } from '../context/SoundContext';
-import { Sparkles, ChevronLeft, ChevronRight, X, Heart, Image as ImageIcon } from 'lucide-react';
+import { Sparkles, ChevronLeft, ChevronRight, X, Heart, Image as ImageIcon, Camera } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPhotoIndex: setExternalIndex }) => {
@@ -98,11 +98,17 @@ export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPho
                 </div>
               </div>
 
-              {/* Polaroid Bottom Title */}
+              {/* Polaroid Bottom Title & Credit */}
               <div className="pt-3 pb-2 text-center">
                 <h3 className="font-body text-base font-bold text-cute-rose dark:text-pink-300 leading-tight">
                   {photo.title}
                 </h3>
+                {photo.photographer && (
+                  <p className="text-[11px] font-semibold text-pink-500/80 dark:text-pink-300/80 mt-1 flex items-center justify-center gap-1">
+                    <Camera className="w-3 h-3 text-pink-400" />
+                    <span>{photo.photographer}</span>
+                  </p>
+                )}
               </div>
 
               {/* Cute Sticker Badge */}
@@ -177,6 +183,13 @@ export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPho
                 <p className="text-gray-600 dark:text-pink-200 text-sm font-medium my-2">
                   {coupleData.photos[selectedPhotoIndex].caption}
                 </p>
+
+                {coupleData.photos[selectedPhotoIndex].photographer && (
+                  <p className="text-xs text-cute-rose/90 dark:text-pink-300 font-semibold mb-3 flex items-center justify-center gap-1">
+                    <Camera className="w-3.5 h-3.5 text-cute-rose" />
+                    <span>{coupleData.photos[selectedPhotoIndex].photographer}</span>
+                  </p>
+                )}
 
                 <div className="mt-3 flex items-center justify-center text-xs text-gray-400 dark:text-pink-300/70 border-t border-pink-100 dark:border-pink-900 pt-3">
                   <span className="bg-pink-100 dark:bg-pink-900 text-cute-rose px-3 py-1 rounded-full font-bold">
