@@ -38,7 +38,7 @@ export const FooterSection = () => {
         </p>
 
         <p className="text-xs text-gray-500 dark:text-pink-200/70 font-medium">
-          "A cute little digital birthday surprise made especially for Eileena Eka Prastyaningrum."
+          "A cute digital birthday surprise made especially for Eileena Eka Prastyaningrum."
         </p>
 
         <div className="flex items-center justify-center gap-1 text-xs text-gray-400 dark:text-pink-300/50 mt-2 font-medium">

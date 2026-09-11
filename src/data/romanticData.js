@@ -219,7 +219,7 @@ export const coupleData = {
       tag: "Digital Surprise 🎁",
       title: "Hadiah Ulang Tahun Ini Untuk Eileena",
       date: "Today & Forever 💖",
-      description: "Website kecil serba pink ini khusus aku buat sebagai kado ulang tahun Eileena Eka Prastyaningrum, pengingat betapa berharganya Eileena dalam hidup aku. Happy Birthday My Love!",
+      description: "Kejutan manis ini khusus aku buat sebagai kado ulang tahun Eileena Eka Prastyaningrum, pengingat betapa berharganya Eileena dalam hidup aku. Happy Birthday My Love!",
       image: "/customer/8.jpeg",
       imageIndex: 7,
       bgGradient: "from-pink-100 to-rose-200 dark:from-purple-900/60 dark:to-pink-900/60",
