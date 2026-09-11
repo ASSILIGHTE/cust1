@@ -62,7 +62,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
         >
           <Sparkles className="w-4 h-4 text-cute-rose animate-spin-slow" />
           <span className="text-xs sm:text-sm font-bold text-cute-rose dark:text-pink-300 tracking-wide uppercase">
-            A Special Digital Birthday Gift For Eileena 🎂
+            A Special Digital Birthday Gift For Sayang 🎂
           </span>
           <Heart className="w-4 h-4 text-cute-rose fill-current animate-pulse" />
         </motion.div>
@@ -74,7 +74,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-script text-4xl sm:text-7xl font-bold text-cute-rose dark:text-pink-300 drop-shadow-sm mb-3"
         >
-          Happy Birthday Eileena! 🎉🎂
+          Happy Birthday Sayang! 🎉🎂
         </motion.h1>
 
         <motion.p
@@ -83,7 +83,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-base sm:text-xl text-gray-600 dark:text-pink-200 font-medium max-w-xl mb-8"
         >
-          "Selamat bertambah usia untuk Eileena Eka Prastyaningrum! Semoga harimu penuh tawa, kebahagiaan, dan senyuman paling manis."
+          "Selamat bertambah usia untuk Sayang! Semoga harimu penuh tawa, kebahagiaan, dan senyuman paling manis."
         </motion.p>
 
         {/* Center Polaroid / Scrapbook Frame with Parallax */}
@@ -114,7 +114,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
             {/* Polaroid Bottom Handwriting Caption & Ribbon */}
             <div className="pt-4 pb-2 flex items-center justify-between px-2">
               <span className="font-body text-lg sm:text-xl text-cute-rose dark:text-pink-300 font-bold">
-                Happy Birthday Eileena 🎀
+                Happy Birthday Sayang 🎀
               </span>
               <span className="text-xs bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-200 px-3 py-1 rounded-full font-semibold">
                 Special Day 🍰
@@ -147,7 +147,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
           {timeLeft.isFinished ? (
             <div className="py-4 text-center">
               <span className="font-script text-3xl font-bold text-cute-rose dark:text-pink-300 animate-bounce block">
-                🎉 SELAMAT ULANG TAHUN EILEENA! 🎂🎉
+                🎉 SELAMAT ULANG TAHUN SAYANG! 🎂🎉
               </span>
             </div>
           ) : (

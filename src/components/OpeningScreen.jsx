@@ -76,7 +76,7 @@ export const OpeningScreen = ({ onOpen }) => {
           >
             {/* Top Ribbon & Cloud Badge */}
             <div className="absolute -top-6 px-4 py-1.5 bg-cute-rose text-white text-sm font-semibold rounded-full shadow-md flex items-center gap-1.5 tracking-wide">
-              <span>🎀</span> Special Birthday Gift For Eileena 🎂
+              <span>🎀</span> Special Birthday Gift For Sayang 🎂
             </div>
 
             {/* Heart Frame Photo with Soft Bounce Animation */}
@@ -92,7 +92,7 @@ export const OpeningScreen = ({ onOpen }) => {
               <div className="relative w-44 h-44 rounded-full p-2 bg-white dark:bg-pink-900/60 shadow-inner flex items-center justify-center overflow-hidden border-4 border-pink-200 dark:border-pink-400/30">
                 <img
                   src="/customer/cust.jpeg"
-                  alt="Eileena Heart"
+                  alt="Sayang Heart"
                   className="w-full h-full object-cover rounded-full transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -110,11 +110,11 @@ export const OpeningScreen = ({ onOpen }) => {
             <h1 className="font-script text-3xl sm:text-4xl text-cute-rose dark:text-pink-300 mb-2 font-bold drop-shadow-sm leading-snug">
               Happy Birthday 🎂
               <span className="block font-body text-lg sm:text-xl font-bold tracking-wide text-rose-500 dark:text-pink-200 mt-1">
-                Eileena Eka Prastyaningrum 🎀
+                Sayang 🎀
               </span>
             </h1>
             <p className="text-gray-600 dark:text-pink-200 text-sm font-medium mb-6">
-              "Ada ucapan dan kejutan manis ulang tahun yang udah aku siapin khusus untuk Eileena..."
+              "Ada ucapan dan kejutan manis ulang tahun yang udah aku siapin khusus untuk Sayang..."
             </p>
 
             {/* Pill-shaped "Buka Kejutan 🎁" Button */}

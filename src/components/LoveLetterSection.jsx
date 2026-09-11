@@ -50,7 +50,7 @@ export const LoveLetterSection = () => {
           Birthday Letter 🎂💌
         </h2>
         <p className="text-gray-600 dark:text-pink-200 text-sm sm:text-base max-w-md mx-auto">
-          Klik amplop pink di bawah ini untuk membuka surat dan doa ulang tahun khusus untuk Eileena!
+          Klik amplop pink di bawah ini untuk membuka surat dan doa ulang tahun khusus untuk Sayang!
         </p>
       </div>
 
@@ -78,7 +78,7 @@ export const LoveLetterSection = () => {
                 Buka Surat Ulang Tahun 🎁
               </span>
               <span className="text-xs text-white/90 font-semibold bg-white/20 px-3 py-1 rounded-full">
-                Strictly For Eileena 🎂
+                Strictly For Sayang 🎂
               </span>
             </div>
 

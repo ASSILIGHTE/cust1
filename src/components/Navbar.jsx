@@ -30,7 +30,7 @@ export const Navbar = ({ activeSection, setActiveSection }) => {
         <nav className="px-4 py-2 rounded-full glass-pink shadow-cute border border-white/80 dark:border-pink-300/20 flex items-center gap-3">
           {/* Logo Brand / Greeting */}
           <div className="flex items-center gap-1.5 text-cute-rose dark:text-pink-300 font-script font-bold text-xl px-2">
-            <span>Eileena</span>
+            <span>Sayang</span>
             <span className="text-sm animate-bounce">🎀</span>
           </div>
 
