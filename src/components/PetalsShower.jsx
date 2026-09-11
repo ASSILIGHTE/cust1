@@ -6,13 +6,14 @@ export const PetalsShower = ({ isActive, onClose }) => {
 
   useEffect(() => {
     if (isActive) {
-      const items = Array.from({ length: 30 }).map((_, i) => ({
+      const birthdayIcons = ['🎈', '🎂', '🎁', '🎉', '🍰', '🌸', '✨', '🧁', '💖', '🎀'];
+      const items = Array.from({ length: 36 }).map((_, i) => ({
         id: Date.now() + i,
         left: Math.random() * 100,
-        size: Math.random() * 16 + 14,
+        size: Math.random() * 18 + 16,
         duration: Math.random() * 3 + 2.5,
         delay: Math.random() * 1.5,
-        icon: i % 2 === 0 ? '🌸' : '🌺',
+        icon: birthdayIcons[i % birthdayIcons.length],
         rotate: Math.random() * 360,
       }));
       setPetals(items);

@@ -10,26 +10,33 @@ export const HeroSection = ({ onTriggerPetals }) => {
   const { scrollY } = useScroll();
   const yParallax = useTransform(scrollY, [0, 500], [0, 80]);
 
-  // Days together live timer calculation
-  const [timeTogether, setTimeTogether] = useState({
+  // Countdown to Birthday at Midnight Tonight
+  const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
+    isFinished: false,
   });
 
   useEffect(() => {
     const calculateTime = () => {
-      const start = new Date(coupleData.startDate);
       const now = new Date();
-      const diff = Math.max(0, now - start);
+      // Target: Jam 12 Malam Ini (00:00:00 besok hari)
+      const target = new Date();
+      target.setHours(24, 0, 0, 0);
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / 1000 / 60) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
+      const diff = target - now;
 
-      setTimeTogether({ days, hours, minutes, seconds });
+      if (diff <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0, isFinished: true });
+      } else {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        setTimeLeft({ days, hours, minutes, seconds, isFinished: false });
+      }
     };
 
     calculateTime();
@@ -45,7 +52,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
       <div className="absolute top-1/3 right-12 text-2xl animate-spin-slow opacity-60">✨</div>
 
       <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center z-10">
-        
+
         {/* Main Title Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +62,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
         >
           <Sparkles className="w-4 h-4 text-cute-rose animate-spin-slow" />
           <span className="text-xs sm:text-sm font-bold text-cute-rose dark:text-pink-300 tracking-wide uppercase">
-            A Digital Gift Made With Pure Love
+            A Special Digital Birthday Gift For Eileena 🎂
           </span>
           <Heart className="w-4 h-4 text-cute-rose fill-current animate-pulse" />
         </motion.div>
@@ -65,9 +72,9 @@ export const HeroSection = ({ onTriggerPetals }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-script text-5xl sm:text-7xl font-bold text-cute-rose dark:text-pink-300 drop-shadow-sm mb-3"
+          className="font-script text-4xl sm:text-7xl font-bold text-cute-rose dark:text-pink-300 drop-shadow-sm mb-3"
         >
-          To My Favorite Person 💗
+          Happy Birthday Eileena! 🎉🎂
         </motion.h1>
 
         <motion.p
@@ -76,7 +83,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-base sm:text-xl text-gray-600 dark:text-pink-200 font-medium max-w-xl mb-8"
         >
-          "Kamu adalah alasan kenapa setiap hari terasa begitu manis, hangat, dan penuh senyuman."
+          "Selamat bertambah usia untuk Eileena Eka Prastyaningrum! Semoga harimu penuh tawa, kebahagiaan, dan senyuman paling manis."
         </motion.p>
 
         {/* Center Polaroid / Scrapbook Frame with Parallax */}
@@ -93,11 +100,11 @@ export const HeroSection = ({ onTriggerPetals }) => {
 
           {/* Polaroid Frame Card */}
           <div className="relative bg-white dark:bg-pink-950 p-4 sm:p-5 rounded-2xl shadow-cute-lg border-2 border-pink-100 dark:border-pink-900/50 transform transition-transform duration-500 group-hover:rotate-0 group-hover:scale-102">
-            
+
             {/* Main Couple Photo */}
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-inner border border-pink-100">
               <img
-                src="/photos/1.jpg"
+                src="/customer/1.jpeg"
                 alt="Our Favorite Photo"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -107,25 +114,25 @@ export const HeroSection = ({ onTriggerPetals }) => {
             {/* Polaroid Bottom Handwriting Caption & Ribbon */}
             <div className="pt-4 pb-2 flex items-center justify-between px-2">
               <span className="font-body text-lg sm:text-xl text-cute-rose dark:text-pink-300 font-bold">
-                Us Together Forever 🎀
+                Happy Birthday Eileena 🎀
               </span>
               <span className="text-xs bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-200 px-3 py-1 rounded-full font-semibold">
-                XOXO 💕
+                Special Day 🍰
               </span>
             </div>
 
             {/* Sticker Badges Overlay */}
             <div className="absolute -bottom-4 -left-3 z-30 bg-white dark:bg-pink-900 px-3.5 py-1.5 rounded-full shadow-lg text-xs font-bold text-cute-rose dark:text-pink-200 border-2 border-white dark:border-pink-800 flex items-center gap-1 animate-bounce">
-              <span>🧸</span> Cutest Couple
+              <span>🎂</span> Birthday Star
             </div>
 
             <div className="absolute -top-4 -right-3 z-30 bg-white dark:bg-pink-900 px-3.5 py-1.5 rounded-full shadow-lg text-xs font-bold text-yellow-600 dark:text-yellow-300 border-2 border-white dark:border-pink-800 flex items-center gap-1">
-              <span>✨</span> Duniaku
+              <span>✨</span> Favorite Person
             </div>
           </div>
         </motion.div>
 
-        {/* Days Together Counter Widget */}
+        {/* Birthday Midnight Countdown Widget */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -134,38 +141,46 @@ export const HeroSection = ({ onTriggerPetals }) => {
         >
           <div className="flex items-center justify-center gap-2 text-cute-rose dark:text-pink-300 font-bold mb-3">
             <Calendar className="w-5 h-5 text-cute-rose" />
-            <span className="font-body font-bold text-xl sm:text-2xl">Days Loving You 💖</span>
+            <span className="font-body font-bold text-xl sm:text-2xl">🎂 Saatnya Membuka Babak Baru</span>
           </div>
 
-          <div className="grid grid-cols-4 gap-2 sm:gap-4 text-center">
-            <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
-              <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
-                {timeTogether.days}
+          {timeLeft.isFinished ? (
+            <div className="py-4 text-center">
+              <span className="font-script text-3xl font-bold text-cute-rose dark:text-pink-300 animate-bounce block">
+                🎉 SELAMAT ULANG TAHUN EILEENA! 🎂🎉
               </span>
-              <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Hari</span>
             </div>
+          ) : (
+            <div className="grid grid-cols-4 gap-2 sm:gap-4 text-center">
+              <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
+                <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
+                  {timeLeft.days}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Hari</span>
+              </div>
 
-            <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
-              <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
-                {timeTogether.hours}
-              </span>
-              <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Jam</span>
-            </div>
+              <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
+                <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
+                  {timeLeft.hours}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Jam</span>
+              </div>
 
-            <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
-              <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
-                {timeTogether.minutes}
-              </span>
-              <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Menit</span>
-            </div>
+              <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
+                <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300">
+                  {timeLeft.minutes}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Menit</span>
+              </div>
 
-            <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
-              <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300 animate-pulse">
-                {timeTogether.seconds}
-              </span>
-              <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Detik</span>
+              <div className="bg-white/80 dark:bg-pink-950/80 p-3 rounded-2xl shadow-sm border border-pink-100">
+                <span className="block text-2xl sm:text-3xl font-extrabold text-cute-rose dark:text-pink-300 animate-pulse">
+                  {timeLeft.seconds}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-pink-200 font-medium">Detik</span>
+              </div>
             </div>
-          </div>
+          )}
         </motion.div>
 
         {/* Cute Mascot Interaction Bar */}

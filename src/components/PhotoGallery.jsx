@@ -62,15 +62,15 @@ export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPho
         </p>
       </div>
 
-      {/* Scrapbook Polaroid Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {/* Scrapbook Polaroid Grid Layout (2-column on Mobile, 3 on Tablet, 4 on Desktop) */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
         {coupleData.photos.map((photo, index) => (
           <motion.div
             key={photo.id}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
             whileHover={{ scale: 1.04, rotate: 0, zIndex: 20 }}
             onClick={() => openLightbox(index)}
             className="relative cursor-pointer group"
@@ -80,7 +80,7 @@ export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPho
             <div className={index % 2 === 0 ? "tape-top-left" : "tape-top-right"} />
 
             {/* Polaroid Card Wrapper */}
-            <div className="bg-white dark:bg-pink-950 p-3 sm:p-4 rounded-2xl shadow-cute group-hover:shadow-cute-lg transition-all duration-300 border border-pink-100 dark:border-pink-900/50">
+            <div className="bg-white dark:bg-pink-950 p-2 sm:p-4 rounded-2xl shadow-cute group-hover:shadow-cute-lg transition-all duration-300 border border-pink-100 dark:border-pink-900/50">
               
               {/* Photo Box */}
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-inner bg-pink-50">
@@ -91,28 +91,22 @@ export const PhotoGallery = ({ selectedPhotoIndex: externalIndex, setSelectedPho
                 />
                 
                 {/* Hover Glow Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                  <span className="text-white text-xs font-semibold flex items-center gap-1">
-                    <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-spin-slow" /> Tap to view
+                <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2 sm:p-3">
+                  <span className="text-white text-[10px] sm:text-xs font-semibold flex items-center gap-1">
+                    <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-yellow-300 animate-spin-slow" /> Tap
                   </span>
                 </div>
               </div>
 
-              {/* Polaroid Bottom Title & Credit */}
-              <div className="pt-3 pb-2 text-center">
-                <h3 className="font-body text-base font-bold text-cute-rose dark:text-pink-300 leading-tight">
+              {/* Polaroid Bottom Title */}
+              <div className="pt-2 sm:pt-3 pb-1 text-center">
+                <h3 className="font-body text-xs sm:text-base font-bold text-cute-rose dark:text-pink-300 leading-tight truncate px-1">
                   {photo.title}
                 </h3>
-                {photo.photographer && (
-                  <p className="text-[11px] font-semibold text-pink-500/80 dark:text-pink-300/80 mt-1 flex items-center justify-center gap-1">
-                    <Camera className="w-3 h-3 text-pink-400" />
-                    <span>{photo.photographer}</span>
-                  </p>
-                )}
               </div>
 
               {/* Cute Sticker Badge */}
-              <div className="absolute -bottom-2 -right-2 z-30 bg-pink-100 dark:bg-pink-900 text-cute-rose dark:text-pink-200 text-xs px-2.5 py-1 rounded-full font-bold shadow-md border-2 border-white dark:border-pink-800">
+              <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 z-30 bg-pink-100 dark:bg-pink-900 text-cute-rose dark:text-pink-200 text-[10px] sm:text-xs px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full font-bold shadow-md border-2 border-white dark:border-pink-800">
                 {photo.sticker}
               </div>
             </div>

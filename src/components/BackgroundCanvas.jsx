@@ -5,13 +5,13 @@ import { useTheme } from '../context/ThemeContext';
 export const BackgroundCanvas = () => {
   const { isNightMode } = useTheme();
 
-  // Floating background items configuration
+  // Floating background items configuration (Birthday Edition)
   const floatingItems = useMemo(() => {
-    const items = ['💗', '✨', '🌸', '☁️', '⭐', '💖', '🧸', '🎀', '🌸', '💫'];
-    return Array.from({ length: 24 }).map((_, i) => ({
+    const items = ['🎂', '🎁', '🎈', '🎉', '🍰', '🧁', '✨', '💖', '🎀', '🥳', '⭐', '💌'];
+    return Array.from({ length: 28 }).map((_, i) => ({
       id: i,
       icon: items[i % items.length],
-      size: Math.floor(Math.random() * 16) + 16,
+      size: Math.floor(Math.random() * 18) + 16,
       left: Math.random() * 100,
       duration: Math.random() * 12 + 10,
       delay: Math.random() * 8,

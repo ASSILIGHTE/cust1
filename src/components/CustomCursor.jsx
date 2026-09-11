@@ -15,7 +15,7 @@ export const CustomCursor = () => {
 
       // Spawn subtle particle trail
       if (Math.random() < 0.3) {
-        const icons = ['💗', '✨', '🌸', '💖', '⭐'];
+        const icons = ['✨', '💖', '🎂', '🎈', '🌸', '🎁', '💗'];
         const newParticle = {
           id: Date.now() + Math.random(),
           x: e.clientX,

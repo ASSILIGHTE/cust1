@@ -47,10 +47,10 @@ export const LoveLetterSection = () => {
         </motion.div>
 
         <h2 className="font-script text-4xl sm:text-6xl text-cute-rose dark:text-pink-300 font-bold mb-3">
-          Love Letter 💌
+          Birthday Letter 🎂💌
         </h2>
         <p className="text-gray-600 dark:text-pink-200 text-sm sm:text-base max-w-md mx-auto">
-          Klik amplop pink di bawah ini untuk membuka pesan manis khusus untuk kamu!
+          Klik amplop pink di bawah ini untuk membuka surat dan doa ulang tahun khusus untuk Eileena!
         </p>
       </div>
 
@@ -75,10 +75,10 @@ export const LoveLetterSection = () => {
                 <Heart className="w-8 h-8 fill-current" />
               </div>
               <span className="font-script text-2xl font-bold text-white drop-shadow">
-                Click To Open 💗
+                Buka Surat Ulang Tahun 🎁
               </span>
               <span className="text-xs text-white/90 font-semibold bg-white/20 px-3 py-1 rounded-full">
-                Strictly For Sayang 🎀
+                Strictly For Eileena 🎂
               </span>
             </div>
 

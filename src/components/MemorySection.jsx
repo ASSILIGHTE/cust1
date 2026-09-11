@@ -22,10 +22,10 @@ export const MemorySection = ({ onOpenPhoto }) => {
         </motion.div>
 
         <h2 className="font-script text-4xl sm:text-6xl text-cute-rose dark:text-pink-300 font-bold mb-3">
-          Our Memory Scrapbook 🌸
+          Birthday Scrapbook 🎂🌸
         </h2>
         <p className="text-gray-600 dark:text-pink-200 text-sm sm:text-base max-w-md mx-auto">
-          Setiap jejak dan cerita manis yang sudah kita lewati bersama.
+          Setiap jejak, doa, dan cerita manis merayakan perjalanan hidup bersamamu.
         </p>
       </div>
 
