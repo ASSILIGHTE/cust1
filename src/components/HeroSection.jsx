@@ -83,7 +83,7 @@ export const HeroSection = ({ onTriggerPetals }) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-base sm:text-xl text-gray-600 dark:text-pink-200 font-medium max-w-xl mb-8"
         >
-          "Selamat bertambah usia untuk Sayang! Semoga harimu penuh tawa, kebahagiaan, dan senyuman paling manis."
+          "Selamat bertambah usia Sayang! Semoga harimu penuh tawa, kebahagiaan, dan senyuman paling manis."
         </motion.p>
 
         {/* Center Polaroid / Scrapbook Frame with Parallax */}

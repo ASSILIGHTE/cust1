@@ -10,7 +10,7 @@ export const coupleData = {
       id: 1,
       url: "/customer/1.jpeg",
       title: "Happy Birthday Sayang 🌸",
-      caption: "Selamat ulang tahun untuk Sayang, orang paling manis! Senyuman Sayang selalu jadi alasan terbaikku untuk bahagia setiap hari.",
+      caption: "Selamat ulang tahun Sayang, orang paling manis! Senyuman Sayang selalu jadi alasan terbaikku untuk bahagia setiap hari.",
       date: "Special Birthday 🎂",
       sticker: "Birthday Star 🎂",
       rotate: "-3deg"
@@ -19,7 +19,7 @@ export const coupleData = {
       id: 2,
       url: "/customer/2.jpeg",
       title: "Sweet Moments ✨",
-      caption: "Momen demi momen bersama Sayang selalu terasa istimewa, apalagi di hari lahirmu ini.",
+      caption: "Momen demi momen bersama kamu selalu terasa istimewa, apalagi di hari lahirmu ini.",
       date: "Special Memory 💖",
       sticker: "Sweet Moment ☕",
       rotate: "2deg"
@@ -28,7 +28,7 @@ export const coupleData = {
       id: 3,
       url: "/customer/3.jpeg",
       title: "Warm Hugs & Best Wishes 🤗",
-      caption: "Semoga di usia Sayang yang baru ini, setiap hari Sayang selalu dipenuhi kehangatan, tawa, dan kebahagiaan.",
+      caption: "Semoga di usia kamu yang baru ini, setiap hari selalu dipenuhi kehangatan, tawa, dan kebahagiaan.",
       date: "Best Wishes 🎀",
       sticker: "My Safe Place 🎀",
       rotate: "-2deg"
@@ -37,7 +37,7 @@ export const coupleData = {
       id: 4,
       url: "/customer/4.jpeg",
       title: "Bright Future Ahead 🌅",
-      caption: "Semoga semua impian dan cita-cita Sayang di tahun ini dikabulkan satu per satu. Aku selalu di sini mendampingi Sayang!",
+      caption: "Semoga semua impian dan cita-cita kamu di tahun ini dikabulkan satu per satu. Aku selalu di sini mendampingi kamu!",
       date: "Dream Big ✨",
       sticker: "Dreamy ✨",
       rotate: "4deg"
@@ -46,7 +46,7 @@ export const coupleData = {
       id: 5,
       url: "/customer/5.jpeg",
       title: "Silly & Joyful Moments 🤪",
-      caption: "Tetap jadi Sayang yang lucu, ceria, absurd tapi gemes, dan selalu berhasil bikin kangen ya!",
+      caption: "Tetap jadi kamu yang lucu, ceria, absurd tapi gemes, dan selalu berhasil bikin kangen ya!",
       date: "Always Laughing 💕",
       sticker: "XOXO 🧸",
       rotate: "-4deg"
@@ -55,7 +55,7 @@ export const coupleData = {
       id: 6,
       url: "/customer/6.jpeg",
       title: "New Year, New Adventures 🗺️",
-      caption: "Siap untuk petualangan-petualangan baru yang lebih seru di usia baru Sayang? Kemana aja asal sama Sayang!",
+      caption: "Siap untuk petualangan-petualangan baru yang lebih seru di usia baru ya sayang? Kemana aja asal sama kamu!",
       date: "Adventure Time 🚗",
       sticker: "Adventure 🚗",
       rotate: "3deg"
@@ -73,7 +73,7 @@ export const coupleData = {
       id: 8,
       url: "/customer/8.jpeg",
       title: "My Favorite Birthday Smile 💕",
-      caption: "Semoga senyum manis Sayang tidak pernah pudar. Tetap jadi orang favorit aku selamanya ya!",
+      caption: "Semoga senyum manis kamu tidak pernah pudar. Tetap jadi orang favorit aku selamanya ya!",
       date: "Today & Always 🎂",
       sticker: "Love Sayang 💗",
       rotate: "2deg"
@@ -100,7 +100,7 @@ export const coupleData = {
       id: 11,
       url: "/customer/11.jpeg",
       title: "Beautiful Journey 🌷",
-      caption: "Perjalanan bersama Sayang adalah petualangan terbaik yang tidak ingin pernah usai.",
+      caption: "Perjalanan bersama kamu adalah petualangan terbaik yang tidak ingin pernah usai.",
       date: "Memori Manis ✨",
       sticker: "Journey 💕",
       rotate: "-2deg"
@@ -109,7 +109,7 @@ export const coupleData = {
       id: 12,
       url: "/customer/12.jpeg",
       title: "Heartwarming Vibes 🧸",
-      caption: "Selalu ada sejuta alasan untuk bersyukur memiliki Sayang di hidup ini.",
+      caption: "Selalu ada sejuta alasan untuk bersyukur memiliki kamu di hidup ini.",
       date: "Forever & Always 💖",
       sticker: "Sweet Heart 🧸",
       rotate: "2deg"
@@ -118,7 +118,7 @@ export const coupleData = {
       id: 13,
       url: "/customer/13.jpeg",
       title: "Lovely Memories 📸",
-      caption: "Foto indah perayaan ulang tahun Sayang yang penuh dengan doa dan kasih sayang.",
+      caption: "Foto indah perayaan ulang tahun kamu yang penuh dengan doa dan kasih sayang.",
       date: "Birthday Vibe 🎂",
       sticker: "Memories 📸",
       rotate: "-4deg"
@@ -127,7 +127,7 @@ export const coupleData = {
       id: 14,
       url: "/customer/14.jpeg",
       title: "Cute & Sweet Pose 🐰",
-      caption: "Gaya lucu Sayang yang selalu bikin gemes dan bikin senyum-senyum sendiri.",
+      caption: "Gaya lucu kamu yang selalu bikin gemes dan bikin senyum-senyum sendiri.",
       date: "Cutest Moment 🎀",
       sticker: "Cutie 🐰",
       rotate: "3deg"
@@ -163,7 +163,7 @@ export const coupleData = {
       id: 18,
       url: "/customer/18.jpeg",
       title: "Best Birthday Wishes 🍰",
-      caption: "Semoga hari lahirmu ini menjadi awal dari tahun yang paling membahagiakan untuk Sayang!",
+      caption: "Semoga hari lahirmu ini menjadi awal dari tahun yang paling membahagiakan untuk mu Sayang!",
       date: "Best Day Ever 🎈",
       sticker: "Happy Birthday 🎂",
       rotate: "2deg"
@@ -175,7 +175,7 @@ export const coupleData = {
       tag: "Birthday Special 🎂",
       title: "Selamat Ulang Tahun Sayang!",
       date: "Spesial Hari Ini 🎉",
-      description: "Hari ini adalah hari istimewa untuk merayakan hadirnya Sayang di dunia ini. Terima kasih sudah tumbuh menjadi sosok yang begitu luar biasa dan penuh cinta.",
+      description: "Hari ini adalah hari istimewa untuk merayakan hadirnya kamu di dunia ini. Terima kasih sudah tumbuh menjadi sosok yang begitu luar biasa dan penuh cinta.",
       image: "/customer/1.jpeg",
       imageIndex: 0,
       bgGradient: "from-pink-100 to-pink-200 dark:from-purple-900/40 dark:to-pink-900/40",
@@ -186,7 +186,7 @@ export const coupleData = {
       tag: "First Meet 🌸",
       title: "Awal Mula Pertemuan Kado Indah",
       date: "Memori Manis ✨",
-      description: "Mengenal Sayang adalah salah satu kado terindah dalam hidupku. Dari sapaan kecil hingga kini merayakan ulang tahun Sayang bersama.",
+      description: "Mengenal kamu adalah salah satu kado terindah dalam hidupku. Dari sapaan kecil hingga kini merayakan ulang tahun kamu bersama.",
       image: "/customer/2.jpeg",
       imageIndex: 1,
       bgGradient: "from-rose-100 to-pink-200 dark:from-pink-900/40 dark:to-purple-900/40",
@@ -206,9 +206,9 @@ export const coupleData = {
     {
       id: "random",
       tag: "Wishes & Prayers 🌟",
-      title: "Doa & Harapan Terbaik Untuk Sayang",
+      title: "Doa & Harapan Terbaik Untuk mu Sayang",
       date: "Untuk Usia Baru 🎈",
-      description: "Semoga Sayang selalu sehat, dilancarkan segala urusan dan impiannya, serta selalu dikelilingi oleh kebahagiaan dan orang-orang yang tulus menyayangi Sayang.",
+      description: "Semoga kamu selalu sehat, dilancarkan segala urusan dan impiannya, serta selalu dikelilingi oleh kebahagiaan dan orang-orang yang tulus menyayangi Sayang.",
       image: "/customer/5.jpeg",
       imageIndex: 4,
       bgGradient: "from-red-100 to-pink-200 dark:from-pink-950/40 dark:to-purple-900/40",
@@ -219,7 +219,7 @@ export const coupleData = {
       tag: "Digital Surprise 🎁",
       title: "Hadiah Ulang Tahun Ini Untuk Sayang",
       date: "Today & Forever 💖",
-      description: "Kejutan manis ini khusus aku buat sebagai kado ulang tahun Sayang, pengingat betapa berharganya Sayang dalam hidup aku. Happy Birthday My Love!",
+      description: "Kejutan manis ini khusus aku buat sebagai kado ulang tahun mu sayang, pengingat betapa berharganya kamu dalam hidup aku. Happy Birthday My Love!",
       image: "/customer/8.jpeg",
       imageIndex: 7,
       bgGradient: "from-pink-100 to-rose-200 dark:from-purple-900/60 dark:to-pink-900/60",
@@ -228,11 +228,11 @@ export const coupleData = {
   ],
   defaultLetter: {
     greeting: "Selamat ulang tahun, Sayang! 🎂🎀✨",
-    body: `Semoga di usia yang baru ini, Sayang selalu diberikan kesehatan, kebahagiaan, dan banyak hal baik dalam hidup. Semoga semua yang Sayang cita-citakan bisa tercapai satu per satu dan setiap langkah yang dijalani selalu dimudahkan. 🤍
+    body: `Semoga di usia yang baru ini, kamu selalu diberikan kesehatan, kebahagiaan, dan banyak hal baik dalam hidup. Semoga semua yang Sayang cita-citakan bisa tercapai satu per satu dan setiap langkah yang dijalani selalu dimudahkan. 🤍
 
 Terima kasih sudah menjadi seseorang yang selalu membawa keceriaan dan warna di sekitar. Semoga hari-hari ke depannya dipenuhi banyak senyum, cerita menyenangkan, dan momen-momen yang berharga. 🌷✨
 
-Tetap jadi Sayang yang baik, ceria, dan selalu percaya pada diri sendiri. Jangan takut untuk terus mengejar apa yang diinginkan dan jangan lupa untuk menikmati setiap prosesnya.
+Tetap jadi sayangku yang baik, ceria, dan selalu percaya pada diri sendiri. Jangan takut untuk terus mengejar apa yang diinginkan dan jangan lupa untuk menikmati setiap prosesnya.
 
 Happy Birthday, Sayang! 🎂 Semoga tahun ini menjadi salah satu tahun terbaik dan penuh kebahagiaan. 🧸✨`,
     closing: "Dengan hangat,",

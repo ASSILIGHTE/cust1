@@ -44,7 +44,7 @@ export const FooterSection = () => {
         <div className="flex items-center justify-center gap-1 text-xs text-gray-400 dark:text-pink-300/50 mt-2 font-medium">
           <span>Crafted with</span>
           <Heart className="w-3.5 h-3.5 text-cute-rose fill-current" />
-          <span>just for Sayang</span>
+          <span>just for u</span>
         </div>
       </div>
     </footer>

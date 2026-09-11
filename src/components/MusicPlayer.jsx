@@ -19,7 +19,7 @@ export const MusicPlayer = () => {
             className="flex items-center gap-2 px-3 py-1.5 rounded-full glass-pink shadow-md text-xs font-bold text-cute-rose dark:text-pink-300"
           >
             <span className="hidden sm:inline-block max-w-[200px] truncate text-[11px] font-semibold">
-              🎵 Taylor Swift - Mine (Taylor's Version)
+              🎵 Backstreet Boys - Shape Of My Heart _ Lyrics 🎧🖤
             </span>
             <button
               onClick={() => {
@@ -55,11 +55,10 @@ export const MusicPlayer = () => {
             toggleMusic();
           }}
           onMouseEnter={() => setShowVolume(true)}
-          className={`relative flex items-center justify-center w-12 h-12 rounded-full shadow-cute transition-all duration-300 border-2 border-white dark:border-pink-300/30 ${
-            isPlaying
+          className={`relative flex items-center justify-center w-12 h-12 rounded-full shadow-cute transition-all duration-300 border-2 border-white dark:border-pink-300/30 ${isPlaying
               ? 'bg-gradient-to-r from-cute-rose to-pink-400 text-white'
               : 'bg-white/80 dark:bg-night-card/80 text-pink-400'
-          }`}
+            }`}
           title={isPlaying ? "Pause Music" : "Play Romantic Music"}
         >
           {/* Animated Music Note / Disc */}
